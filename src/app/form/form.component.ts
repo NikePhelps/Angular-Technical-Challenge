@@ -9,7 +9,7 @@ import { HttpService } from '../http.service';
 })
 export class FormComponent implements OnInit {
 
-  public searchForm: FormGroup;
+  public searchForm: FormGroup | undefined;
   public weatherValues: any;
 
   constructor(private formBuilder: FormBuilder,
